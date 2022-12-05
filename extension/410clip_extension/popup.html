@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CS410 Clip 'n Search'</title>
+  </head>
+  <body>
+    <h1 style="text-align:center;"> Clip 'n Search (CS 410) </h1>
+
+
+    <div id="content-div" style="display:inline;">
+      <div id="page-title">
+      </div>
+      <div id="highlighted-text">
+      </div>
+
+      <input id="copy-paste" style="width:400px;height:20px" type="text" placeholder="Copy-paste text if highlight does not work"><br><br>
+
+
+    <form id="save-context" method="GET" style="height:110px">
+      <div>
+        <input style="width:400px;height:20px" type="text" name="explanation" placeholder="This page / highlighted text is useful because..." required>
+        <input type="submit" style="height:30px;width:170px" value="Submit to Clip 'n Search">
+      </div>
+    </form>
+
+    <form id="dl-search" method="GET" style="height:110px">
+      <div>
+        <input style="width:400px;height:20px" type="text" name="dl_search_query" placeholder="Enter query here..." required>
+        <input type="submit" style="height:30px;width:200px" value="Search Clip 'n Search database">
+      </div>
+    </form>
+
+
+    <form id="search-bar" method="GET" style="height:110px;display:none">
+      <div>
+        <input style="width:400px;height:20px" type="text" name="search_query" placeholder="Paste text here..." required>
+        <input type="submit" style="height:30px;width:150px" value="Search by Copy-Paste">
+      </div>
+    </form>
+    <p>Credit goes to CS 410 TAs for originally developing this extension
+      (and I took the relevant parts and slightly modified/extended it
+      [made a simple version for this final project], the server is something I did by myself).
+     Additional credits on github/about section of website.</p>
+
+
+  </div>
+
+  </body>
+  <script src="connectionHandler.js"> </script>
+</html>

@@ -1,0 +1,24 @@
+{
+    "name": "CS 410 Project: Clip 'n Search'",
+    "description": "Users can use this tool save online content and search for it, in addition to some other things.",
+    "version": "0.0.0.2",
+    "manifest_version": 3,
+    "permissions": ["storage", "activeTab", "scripting"],
+    "host_permissions": ["http://brysonli.pythonanywhere.com/*"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/images/scissor16.png",
+        "32": "/images/scissor32.png",
+        "48": "/images/scissor48.png",
+        "128": "/images/scissor128.png"
+      }
+    },
+    "icons": {
+      "16": "/images/scissor16.png",
+      "32": "/images/scissor32.png",
+      "48": "/images/scissor48.png",
+      "128": "/images/scissor128.png"
+    }
+
+  }
