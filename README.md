@@ -4,8 +4,8 @@
 - flask directory - contains flask code (no set up needed, this is just for your information)
 - 410 project progress report.pdf - project progress report
 -  CS 410 Project Tutorial.pdf - tutorial presentation (used in demo video) https://www.youtube.com/watch?v=2mwbti2gppo
-- README.md this readme file - documentation for the code with some details about the code/design
-- cs 410 project documentation and info.pdf - 
+- README.md this readme file 
+- cs 410 project documentation and info.pdf - documentation for the code with some details about the code/design
 - cs410 project proposal.pdf - project proposal
 
 
