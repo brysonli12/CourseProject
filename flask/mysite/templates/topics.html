@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>{% block title %} Topics Extracted  {% endblock %}</h1>
+    <h2>from current article database (in no particular order)</h2>
+    {% for message in messages['topics'] %}
+        <div class='message'>
+            <h3>{{ message['number'] }}</h3>
+            <p>{{ message['topic_list'] }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

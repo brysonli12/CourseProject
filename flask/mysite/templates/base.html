@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %} - CS 410 Project (Fall 2022)</title>
+    <style>
+        .message {
+            padding: 10px;
+            margin: 5px;
+            background-color: #f3f3f3
+        }
+        nav a {
+            color: #0377fc;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+
+    </style>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='scissor.jpeg') }}">
+</head>
+<body>
+    <nav>
+        <img src="{{ url_for('static', filename='scissor.jpeg') }}" height=35px>
+        <a href="{{ url_for('index') }}">Clip 'n Search</a>
+        <a href="{{ url_for('topics') }}">Topics</a>
+        <a href="{{ url_for('about') }}">About</a>
+    </nav>
+    <hr>
+    <form  action="http://brysonli.pythonanywhere.com/results" method="post">
+        <label style="font-size:14pt;" for="title">Search using BM25: </label>
+        <input style="height:14pt;width:300px;font-size:14pt;" type="text" name="query"
+               placeholder="Enter something to search for"
+               value="{{ request.form['query'] }}"></input>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>
